@@ -1,0 +1,21 @@
+label {
+    display: block;
+}
+
+.error {
+    outline: 0;
+    border: 2px groove red;
+}
+
+p {
+    margin: 0;
+}
+
+.error-email {
+    width: 150px;
+
+}
+
+.zip:invalid {
+    border: 10px solid red;
+}

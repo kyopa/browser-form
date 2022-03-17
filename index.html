@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="java.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <form action="">
+            <div class="email">
+                <label for="email">Email <span style="color: red">*</span></label>
+                <input type="email" name="email" id="email">
+                <div class="error-email"></div>
+            </div>
+            <div class="country">
+                <label for="country">Country <span style="color: red">*</span></label>
+                <input type="text" name="country" id="country">
+                <div class="error-country"></div>
+            </div>
+            <div class="zipcode">
+                <label for="zip">ZIP <span style="color: red">*</span></label>
+                <input type="text" name="zip" id="zip" pattern="[0-9]{5}">
+                <div class="error-zip"></div>
+
+            </div>
+            <div class="password">
+                <label for="pwd">Password <span style="color: red">*</span></label>
+                <input type="password" name="pwd" id="pwd" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$">
+                <div class="box">
+                    <div class="passwordthing">Password requires</div>
+                    <div class="uppercase">1 Uppercase</div>
+                    <div class="lowercase">1 Lowercase</div>
+                    <div class="number"> 1 Number</div>
+                    <div class="symbol">1 Symbol</div>
+                    <div class="min">Min length: 8</div>
+                    <div class="max">Max length 12</div>
+                </div>
+
+
+            </div>
+            <div class="confirmation">
+                <label for="confirm">Confirm Password <span style="color: red">*</span></label>
+                <input type="password" name="confirm" id="confirm">
+                <div class="error-pwd-confirmation">Password doesn't match</div>
+            </div>
+
+            
+            
+        </form>
+        <button>Submit</button>
+
+        <div class="display"></div>
+    </div>
+    
+</body>
+</html>
